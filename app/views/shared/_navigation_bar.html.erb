@@ -6,7 +6,7 @@
 
   <% if current_user %>
     <span class="navbar-text">
-        <img class="avatar" src="<%= gravatar_url(current_user) %>">
+        <img class="avatar" src="<%= current_user.gravatar_url %>">
         <%= current_user.username %>
         <br />
         <small><%= link_to 'Logout', destroy_user_session_path, method: :delete %></small>
