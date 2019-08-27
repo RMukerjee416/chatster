@@ -1,9 +1,5 @@
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark justify-content-between">
-  <a class="navbar-brand" href="#">Rails chat tutorial</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav-bar-collapse" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-
+  <%= link_to 'Chatster', root_path, class: 'navbar-brand' %>
   <% if current_user %>
     <span class="navbar-text">
         <img class="avatar" src="<%= current_user.gravatar_url %>">
