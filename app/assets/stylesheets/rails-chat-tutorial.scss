@@ -26,3 +26,23 @@
   border-top: 0 none;
   border-radius: 0 0 5px 5px;
 }
+
+.chat-message-container {
+  padding: 5px;
+
+  .avatar {
+    margin: 5px;
+  }
+
+  .message-content {
+    padding: 5px;
+    border: 1px #053C4B;
+    border-radius: 5px;
+    background: #0C5F74;
+    color: white;
+  }
+
+  & + .chat-message-container {
+    margin-top: 10px;
+  }
+}
