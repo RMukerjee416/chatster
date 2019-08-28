@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css?family=Fugaz+One&display=swap');
+
+body {
+  background: image_url('email-pattern.png');
+}
+
 .avatar {
 	max-height: 30px;
 	border-radius: 15px;
@@ -45,4 +51,10 @@
   & + .chat-message-container {
     margin-top: 10px;
   }
+}
+
+.navbar-dark .navbar-brand {
+	color: #1FDE8C;
+	font-family: 'Fugaz One', cursive;
+	font-size: 50px;
 }

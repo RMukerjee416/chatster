@@ -14,7 +14,10 @@
           <div class="row no-gutters">
             <div class="col-auto text-center">
               <img src="<%= room_message.user.gravatar_url %>" class="avatar" alt="">
-            </div>
+              <div class="username">
+                <%= room_message.user.username %>&nbsp;&nbsp;&nbsp;
+              </div>
+          </div>
 
             <div class="col">
               <div class="message-content">
@@ -57,6 +60,8 @@
     <div class="row no-gutters">
       <div class="col-auto text-center">
         <img src="" class="avatar" alt="" data-role="user-avatar">
+        <div class="username" data-role="username">
+        </div>
       </div>
 
       <div class="col">
